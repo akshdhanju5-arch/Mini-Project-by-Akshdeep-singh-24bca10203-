@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="@color/taxiBackground"
+    tools:context=".DeleteAccountActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Ride"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/errorRed" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:hint="Enter Ride ID to Cancel">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/deleteEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnDoDelete"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Confirm Cancellation"
+        android:backgroundTint="@color/errorRed"
+        android:textColor="@color/white"
+        app:cornerRadius="12dp" />
+
+    <Button
+        android:id="@+id/btnBackFromDelete"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Go Back"
+        android:layout_marginTop="16dp"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textColor="@color/black" />
+
+</LinearLayout>
